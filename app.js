@@ -21,6 +21,23 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model('Blog', blogSchema);
 
+// ROUTES 
+
+// Redirect root route to /blogs
+app.get('/', (req, res) => {
+    res.redirect('/blogs');
+})
+
+// INDEX 
+app.get('/blogs', (req, res) => {
+    Blog.find({}, (err, blogs) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.render('index', {blogs});
+        }
+    });
+})
 
 app.listen(3000, () => {
     console.log("Blog App running");
