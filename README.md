@@ -18,5 +18,5 @@ Basic Blog application that enables creating and editing posts using REST archit
 ### Create
 ![Alt text](/resources/readmeImages/create.JPG "Create new post form")
 
-### Efitt
+### Edit
 ![Alt text](/resources/readmeImages/edit.JPG "Edit post form")
