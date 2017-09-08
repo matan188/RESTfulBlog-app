@@ -9,3 +9,7 @@ i.icon {
 a ~ form {
     display: inline;
 }
+
+.edit {
+    color: #BDBDBD;
+}
